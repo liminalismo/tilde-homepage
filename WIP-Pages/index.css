@@ -1,17 +1,20 @@
 body {
   font-size: 14px;
   font-family: 'Courier New', monospace;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* HEADER */
-
 header {
   display: block;
   margin: auto;
   background: #9EEF73;
-  background: #9EEF73;
   padding: 20px;
-  max-width: 50em;
+  width: 50em;
   font-weight: bold;
   text-align: center;
 }
@@ -20,6 +23,7 @@ header {
   display: table;
   border-spacing: 10px;
 }
+
 .logo {
   display: table-cell;
   border: 3px;
@@ -36,7 +40,7 @@ header {
 .nav {
   display: table-row;
   color: black;
-background: #C0F7A2;
+  background: #C0F7A2;
 }
 
 .nav button {
@@ -53,5 +57,60 @@ button a {
   font-weight: bold;
   text-transform: uppercase;
   color: #ED3059;
+}
 
+/* MAIN BODY */
+#main {
+  display: table;
+  background-color: black;
+  color: #DEFCCE;
+  padding: 20px;
+  margin: auto;
+  width: 50em;
+}
+
+.row {
+  display: table-row;
+  margin: 10px;
+}
+
+#about {
+  display: table-cell;
+  border: 3px;
+  border-style: double;
+  border-color: #F25174;
+  padding: 20px;
+}
+
+#about em, #howto em {
+  color: #ED3059;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#howto {
+  display: table-cell;
+  border: 3px;
+  border-style: double;
+  border-color: #F25174;
+  padding: 20px;
+  width: 50%;
+}
+
+#members {
+  display: table-cell;
+  border: 3px;
+  border-style: double;
+  border-color: #F25174;
+  padding: 20px;
+  width: 50%;
+}
+
+#members ul {
+  list-style-type: none;
+}
+
+#members a, #howto a {
+  text-decoration: none;
+  color: #DD6AC7;
 }

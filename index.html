@@ -6,25 +6,28 @@
   <meta name="description" content="a tilde instance ~ running on a raspberry pi since 2020">
   <title>liminalismo</title>
   <style type="text/css">
-    body {
-      font-size: 14px;
-      font-family: 'Courier New', monospace;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
+
+html, body {
+  background-color: black;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  width: 50em;
+  margin: auto;
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
     /* HEADER */
 
     header {
       display: block;
       margin: auto;
-      background: #9EEF73;
-      background: #9EEF73;
-      padding: 20px;
-      max-width: 50em;
+      background: black;
+      width: 50em;
       font-weight: bold;
       text-align: center;
     }
@@ -32,12 +35,11 @@
     .header-grid {
       display: table;
       border-spacing: 10px;
+
     }
 
     .logo {
       display: table-cell;
-      border: 3px;
-      border-style: double;
       text-align: center;
       width: 100rem;
     }
@@ -45,17 +47,18 @@
     #ascii {
       font-size: 15%;
       text-align: center;
+      color: #FAA5B7;
     }
 
     .nav {
       display: table-row;
-      color: black;
-      background: #C0F7A2;
+      color: white;
+      background: #none;
     }
 
     .nav button {
       border: none;
-      padding: 1em;
+      padding-bottom: 1em;
       text-align: center;
       background: none;
     }
@@ -66,21 +69,67 @@
       font-family: 'Courier New', monospace;
       font-weight: bold;
       text-transform: uppercase;
-      color: #ED3059;
+      color: #9EEF73;
 
     }
 
-
-    #main {
-      background: #DEFCCE;
-      padding: 20px;
-      text-align: justify;
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr;
-    }
 
     /* Main section elements */
+    /* MAIN BODY */
+    #main {
+      display: table;
+      background-color: black;
+      color: #DEFCCE;
+      margin: auto;
+      width: 50em;
+    }
+
+    .row {
+      display: table-row;
+            width: 50em;
+    }
+
+    #about {
+      display: table-cell;
+      border: 3px;
+      border-style: double;
+      border-color: #F25174;
+      padding: 20px;
+    }
+
+    #about em, #howto em {
+      color: #ED3059;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    #howto {
+      display: table-cell;
+      border: 3px;
+      border-style: double;
+      border-color: #F25174;
+      padding: 20px;
+      width: 50%;
+    }
+
+    #members {
+      display: table-cell;
+      border: 3px;
+      border-style: double;
+      border-color: #F25174;
+      padding: 20px;
+      width: 50%;
+    }
+
+    #members ul {
+      list-style-type: none;
+    }
+
+    #members a, #howto a {
+      text-decoration: none;
+      color: #DD6AC7;
+    }
+
     /* Footer elements */
     footer {
       background: #ED9CDE;
@@ -138,17 +187,22 @@
     </div>
   </header>
   <section id="main">
+    <div id="row">
     <section id="about">
-      <p>liminalismo is a shared linux system, which is sometimes called a pubnix or a tilde. this system is a tiny raspberry pi computer that physically exists somewhere in spain.</p>
+      <p><em>liminalismo</em> is a shared linux system, which is sometimes called a pubnix or a tilde. this system is a tiny raspberry pi computer that physically exists somewhere in spain.</p>
       <p>we exist as an community space for people who want to make a personal page, or quite simply poke around SSH and low-resource programming. we firmly endorse the slow web movement and want to provide a space for people to socialize
         asynchronously, to express themselves outside of the constraints that certain web formats put on our words, art, and thoughts.</p>
     </section>
+  </div>
+  <div id="row">
     <section id="howto">
       To request an account, simply write an e-mail to <a href="mailto:tilde@liminalismo.com">tilde@liminalismo.com</a> that contains:
       <ul>
-        <li>your desired username. this will be the name with which you access to the server and the URL of your page.</li>
-        <li>your e-mail address. this is so that we can write back when your submission is approved, and so that all the mail that gets sent to yourusername@liminalismo.com reaches you.</li>
-        <li>a brief paragraph telling us why you want to join. this is both to prove you're a human and to make sure your projects are not too heavy for our resources.</li>
+        <li><em>your desired username</em>. this will be the name with which you access to the server and the URL of your page.</li>
+<br>
+        <li><em>your e-mail address</em>. this is so that we can write back when your submission is approved, and to redirect your liminalismo mail to your main address.</li>
+        <br>
+        <li><em>a brief paragraph telling us why you want to join</em>. this is both to prove you're a human and to make sure your projects are not too heavy for our resources.</li>
       </ul>
     </section>
     <section id="members">
@@ -158,6 +212,7 @@
         <li><a href="https://liminalismo.com/~hiper/">~hiper</a></li>
       </ul>
     </section>
+  </div>
   </section>
 
   <footer>
