@@ -1,0 +1,57 @@
+body {
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+}
+
+/* HEADER */
+
+header {
+  display: block;
+  margin: auto;
+  background: #9EEF73;
+  background: #9EEF73;
+  padding: 20px;
+  max-width: 50em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-grid {
+  display: table;
+  border-spacing: 10px;
+}
+.logo {
+  display: table-cell;
+  border: 3px;
+  border-style: double;
+  text-align: center;
+  width: 100rem;
+}
+
+#ascii {
+  font-size: 15%;
+  text-align: center;
+}
+
+.nav {
+  display: table-row;
+  color: black;
+background: #C0F7A2;
+}
+
+.nav button {
+  border: none;
+  padding: 1em;
+  text-align: center;
+  background: none;
+}
+
+button a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ED3059;
+
+}
