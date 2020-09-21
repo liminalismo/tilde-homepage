@@ -1,0 +1,129 @@
+
+html, body {
+  background-color: black;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  width: 50em;
+  margin: auto;
+  padding: 2em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+    /* HEADER */
+
+    header {
+      display: block;
+      margin: auto;
+      background: black;
+      width: 50em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .header-grid {
+      display: table;
+      border-spacing: 10px;
+
+    }
+
+    .logo {
+      display: table-cell;
+      text-align: center;
+      width: 100rem;
+    }
+
+    #ascii {
+      font-size: 15%;
+      text-align: center;
+      color: #FAA5B7;
+    }
+
+    .nav {
+      display: table-row;
+      color: white;
+      background: #none;
+    }
+
+    .nav button {
+      border: none;
+      padding-bottom: 1em;
+      text-align: center;
+      background: none;
+    }
+
+    button a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #9EEF73;
+
+    }
+
+    /* MAIN BODY */
+    #main {
+      display: table;
+      background-color: black;
+      color: #DEFCCE;
+      margin: auto;
+      width: 50em;
+    }
+
+    .row {
+      display: table-row;
+            width: 50em;
+    }
+
+    #about {
+      display: table-cell;
+
+      border-color: #F25174;
+      padding: 20px;
+    }
+
+    #about em, #howto em {
+      color: #ED3059;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    #howto {
+      display: table-cell;
+      border: 3px;
+      border-style: double;
+      border-color: #F25174;
+      padding: 20px;
+      width: 40em;
+    }
+
+    #members {
+      display: table-cell;
+      border: 3px;
+      border-style: double;
+      border-color: #F25174;
+      padding: 20px;
+      width:50em;
+    }
+
+    #members ul {
+      list-style-type: none;
+    }
+
+    #members a, #howto a, footer a {
+      text-decoration: none;
+      color: #DD6AC7;
+    }
+
+    /* FOOTER*/
+    footer {
+      margin: auto;
+      background: #black;
+      color: #FDCED8;
+      padding: 1em;
+      text-align: center;
+    }
