@@ -17,8 +17,8 @@
     <ul>
       <li><a href="#tildeverse">What is a tilde?</a></li>
       <li><a href="#shell">Basic shell usage</a></li>
-      <li><a href="#html">Building a static website</a></li>
-      <li><a href="#gui">Using a GUI to interact with the server</a></li>
+      <li><a href="#html">Building a website</a></li>
+      <li><a href="#filesystem">Posting your website and interacting with the server</a></li>
       <li><a href="#netiquette">DOs and DON'Ts of server usage.</a></li>
       <li><a href="#mail">E-mail addresses and aliases</a></li>
       <li><a href="#social">Being social on the tildeverse</a></li>
@@ -55,11 +55,45 @@
     <hr>
     <p>* If you know your way around computers, you'll realize this is paring it down a lot, but bear with us, as this is meant to be a guide for beginners and it's important to take it one step at a time.</p>
     <hr>
-    <p>If you want to learn how to use these three languages, we wholeheartedly recommend checking out the resources at <a href="https://www.w3schools.com/">W3Schools</a>, which are very accessible to beginners and immensely thorough. You can also ask <a href="https://liminalismo.com/~izzy">~izzy</a> to help you out, if the amount of content is too daunting.
+    <p>If you want to learn how to use these three languages, we wholeheartedly recommend checking out the resources at <a href="https://www.w3schools.com/">W3Schools</a>, which are very accessible to beginners and immensely thorough. You can also
+      ask <a href="https://liminalismo.com/~izzy">~izzy</a> to help you out, if the amount of content is too daunting.</p>
 
 
-    <h3><a id="gui">Using a GUI to interact with the server</a>
+    <h3><a id="filesystem">Posting your website and interacting with the server</a>
     </h3>
+    <p>Every user on liminalismo has an user directory within the system, which is a folder that contains all your files and that only you can interact with, unless you give other users permission. You have two different ways to access that folder:
+      through a terminal, or through a GUI (Graphic User Interface). If you're on a system that uses the bash shell, like Linux or OSX, you can use the system terminal; to install a bash shell on Windows, tou can follow <a
+        href="https://itsfoss.com/install-bash-on-windows/">this</a> tutorial. As for GUIs, we recommend using <a href="https://filezilla-project.org/download.php?show_all=1">FileZilla</a>, which is open source, intuitive and available for most
+      operating systems.</p>
+
+    <p>Your website is hosted in the public_html folder, which is a subdirectory in your home folder. Any files you upload there will be served through a browser when you look up liminalismo.com/~your-username. To access this folder and upload the
+      files:</p>
+    <ul>
+      <li>
+        <h4>Terminal:</h4>
+        <ul>
+          <li> Using nano editor: <p><code lang="sh">ssh yourusername@liminalismo.com</code> > cd <code lang="sh">cd public_html</code> > <code lang="sh">nano nameofyourfile.filetype</code> [index.html] > paste the contents of your code, and save
+              with Ctrl+X > Y > Enter.</p>
+          </li>
+          <li>Using a git repository:<p><code lang="sh">git init</code> > <code lang="sh">git remote add [shortname for the remote] [URL of the repository, hosted on Github/Gitlab/Gitea etc]</code> > <code lang="sh">git fetch [remote
+                shortname]</code> > <code lang="sh">git pull [remote shortname] [branch name]</code>
+            <p>
+            <p>Whenever you want to update your page, save your changes on your source repo and repeat the fetch and pull steps only.</p>
+          </li>
+        </ul>
+      <li>
+        <h4>GUI:</h4>
+        <p>On FileZilla, enter the following information on the top bar or site manager [Ctrl+S]</p>
+        <ul>
+          <li>Hostname: liminalismo.com</li>
+          <li>Username: [your username]</li>
+          <li>Password: [your password]</li>
+          <li>Port: 22</li>
+        </ul>
+        <p>You will then be connect to your user folder, where you'll see the public_html subdirectory. Simply drag and drop the files from your computer to upload them to the server.</p>
+      </li>
+    </ul>
+
     <h3><a id="netiquette">DOs and DON'Ts of server usage</a></h3>
     <h3><a id="mail">E-Mail addresses and aliases</a></h3>
     <p>Every user on the liminalismo system gets a custom e-mail address on <em>yourusername</em>@liminalismo.com that you can give out to people from outside the server. All the mail sent to that address will be forwarded to the (external) e-mail
