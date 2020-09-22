@@ -23,6 +23,7 @@
       <li><a href="#social">Being social on the tildeverse</a></li>
     </ul>
   </div>
+
   <!-- CONTENTS -->
   <div id="contents">
     <h3><a name="tildeverse">What is a tilde?</a></h3>
@@ -35,7 +36,28 @@
     <p>There are other tildes on the internet, and there's a hub for them in <a href="https://tildeverse.org">tildeverse.org</a>. There are services that all tilde users can access and that help tildezens interact with others on the 'verse.</p>
 
     <h3><a id="shell">Basic shell usage</a></h3>
-    <h4>THIS SECTION IS A WORK IN PROGRESS</h4>
+    <p>To interact with liminalismo, you can use either a terminal or a GUI (Graphic User Interface); sitting in front of a black screen where everything you do has to be done through text can be very intimidating for someone who hasn't used a
+      command-line interface before, but it genuinely makes things quite painless once you get the hang of it. That's why this section exists: we want to give you a primer to the basic commands you'll be using to interact with the tilde.</p>
+    <ol>
+      <li>
+        Logging into your account
+        <p>To log into your account from the terminal, you'll be using <code lang="sh">SSH</code>, a protocol that allows you to connect to remote computers securely. When you open the terminal, make sure you have SSH installed by running the <code
+            lang="sh">apt-get install</code> command. Once you've installed it or made sure it was already there, connect to the tilde by running <code lang="sh">ssh [your-username]@liminalismo.com</code></p>
+        <p>It will then tell you the ECSDA fingerprint (make sure the same as the one in the footer of our page) and ask if you want to connect, to which you can say yes if the fingerprints are the same.</p>
+        <p>It will ask you for your password; if it's the first time you're connecting, put in the one we e-mailed to you (see how to change your password in the next heading), or put your own if you've already set one, and hit enter. Don't worry if
+          nothing shows up in the terminal, the characters are hidden for privacy! You are still typing.</p>
+        <p>Voilà! You're now inside the server, you've hacked the mainframe and are riding the internet supersubway. Welcome!</p>
+
+      </li>
+      <li>Changing your password</li>
+
+      <li>Listing and entering directories (folders)</li>
+      <li>Changing permissions for files and folders</li>
+      <li>Editing files on the terminal</li>
+    </ol>
+    <hr>
+    <p>You can see
+      how to interact with a GUI in the <a href="#filesystem">filesystem section</a> on this FAQ; to install a shell on Windows, follow <a href="https://itsfoss.com/install-bash-on-windows/">this</a> tutorial.</p>
     <h3><a id="html">Building a website</a></h3>
     <p>The main way tildezens communicate with the people outside their server is through their personal websites, which in our tilde's case are accessible in-browser through liminalismo.com/~<em>username</em> and listed in our homepage's
       directory. Not all code can be parsed by a browser, but pages written in HTML can, and that's why it's the base language most people use to build their sites.</p>
@@ -110,7 +132,9 @@
       the purpose of socializing, and coding on your (personal) computer and publishing a (personal) site, regardless of the fact that there are other folders from other people on the same computer doesn't seem terribly interactive. That's where the
       larger Tildeverse comes in.</p>
 
-    <p>As we mentioned on the first section of this page, there is a hub for the tilde servers on the internet. There are services that exist as a common space among all the tildes so the userbases can interact among them and with each other. These include text and voice chatrooms (IRC and Mumble), a social network (Mastodon, Pleroma), videogame servers (Minecraft and Factorio... you can check out the links to those and more services for tildezens on the <a href="https://tildeverse.org">tildeverse.org</a> homepage.</p>
+    <p>As we mentioned on the first section of this page, there is a hub for the tilde servers on the internet. There are services that exist as a common space among all the tildes so the userbases can interact among them and with each other. These
+      include text and voice chatrooms (IRC and Mumble), a social network (Mastodon, Pleroma), videogame servers (Minecraft and Factorio... you can check out the links to those and more services for tildezens on the <a
+        href="https://tildeverse.org">tildeverse.org</a> homepage.</p>
     <div>
 </body>
 
