@@ -49,9 +49,18 @@
         <p>Voilà! You're now inside the server, you've hacked the mainframe and are riding the internet supersubway. Welcome!</p>
 
       </li>
-      <li>Changing your password</li>
-
-      <li>Listing and entering directories (folders)</li>
+      <li>Changing your password
+      <p>Once you're inside the server, you can change your account's password by typing <code lang="sh">passwd</code>.</p>
+      <p>The command-line is the only way to change your password without an admin intervening, so we recommend using it at least for this. If you forget your password, contact an admin through <a
+          href="mailto:tilde@liminalismo.com">tilde@liminalismo.com</a> and they will generate a new one.</p></li>
+      <li>Directories (folders)
+        <p>Now that you're inside the system, the most useful commands to have at hand are the ones that allow you to interact with your directories, which is what folders are called.</p>
+        <ul>
+          <li><p>To <em>list</em> the folders in the directory you are in: <code lang="sh">ls -la</code></p></li>
+          <li><p>To <em>enter</em> a folder: <code lang="sh">cd [name of the folder]/[full route to the folder, if you're not on the parent folder already]</code></p></li>
+          <li><p>To <em>create</em> a folder: <code lang="sh">mkdir [name of folder]</code></p></li>
+        </ul>
+      </li>
       <li>Changing permissions for files and folders</li>
       <li>Editing files on the terminal</li>
     </ol>
